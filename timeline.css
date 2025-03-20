@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.event {
+    padding: 15px 30px;
+    position: relative;
+    background-color: #ffccd5;
+    border-radius: 10px;
+    width: 45%;
+    text-align: left;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event:nth-child(even) {
+    left: 55%;
+}
+
+.event:nth-child(odd) {
+    left: 0;
+}
+
+.date {
+    font-weight: bold;
+    color: #ff4d6d;
+    font-size: 1.2em;
+}
+
+.content {
+    font-size: 1.1em;
+}
